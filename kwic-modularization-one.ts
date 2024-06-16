@@ -63,4 +63,3 @@ lines.split('\n').forEach((line) => {
 });
 
 kwicInstance.output()
-
