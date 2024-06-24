@@ -17,6 +17,7 @@ export class CircularShifter {
             const words = [...line];
             for (let i = 0; i < words.length; i++) {
                 const shift = [...words.slice(i), ...words.slice(0, i)];
+                const cx = shift.toString()
                 this.circularShifts.push(shift);
             }
         }

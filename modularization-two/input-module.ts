@@ -11,7 +11,8 @@ export class InputModule {
     readLines(): void {
         const input = fs.readFileSync('../data-lines.txt', 'utf8').split('\n');
         for (const line of input) {
-            this.lineStorage.addLine(line);
+            const x = line.replace('\r', '')
+            this.lineStorage.addLine(x);
         }
     }
 }

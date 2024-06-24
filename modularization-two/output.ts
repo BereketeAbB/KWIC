@@ -24,7 +24,7 @@ export class OutputModule {
     printCircularShifts(): string[] {
         const shifts = this.circularShifter.getAllShifts();
         return shifts.map((shift, index) => {
-             console.log(`Shift ${index}: ${shift.join(' ')}`);
+            console.log(`Shift ${index}: ${shift.join(' ')}`);
             return (`Shift ${index}: ${shift.join(' ')}`);
         });
     }
@@ -34,7 +34,8 @@ export class OutputModule {
         for (let i = 0; i < numShifts; i++) {
             const shiftIndex = this.alphabetizer.ITH(i);
             if (shiftIndex !== null) {
-                console.log(`Alphabetized Shift ${i}: ${this.circularShifter.getShift(shiftIndex)}`);
+                const ind = this.circularShifter.getShift(shiftIndex)
+                console.log(ind);
             }
         }
     }
