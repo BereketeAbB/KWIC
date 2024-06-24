@@ -16,7 +16,7 @@ export class OutputModule {
     printLines(): string[] {
         const lines = this.lineStorage.getAllLines();
         return lines.map((line, index) => {
-            console.log `Line ${index}: ${line.join(' ')}`
+            console.log(`Line ${index}: ${line.join(' ')}`)
             return `Line ${index}: ${line.join(' ')}`
         });
     }
@@ -24,7 +24,7 @@ export class OutputModule {
     printCircularShifts(): string[] {
         const shifts = this.circularShifter.getAllShifts();
         return shifts.map((shift, index) => {
-             (`Shift ${index}: ${shift.join(' ')}`);
+             console.log(`Shift ${index}: ${shift.join(' ')}`);
             return (`Shift ${index}: ${shift.join(' ')}`);
         });
     }

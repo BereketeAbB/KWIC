@@ -17,3 +17,6 @@ alphabetizer.ALPH();
 
 
 const outputModule = new OutputModule(storage, shifter, alphabetizer);
+outputModule.printAlphabetizedShifts()
+// outputModule.printCircularShifts()
+// outputModule.printLines()
